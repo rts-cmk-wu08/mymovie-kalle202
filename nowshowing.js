@@ -17,7 +17,7 @@ fetch("https://api.themoviedb.org/3/trending/movie/week?api_key=5a42ea8b4fbbe41c
     });
 })
 
-
+// movie id: https://api.themoviedb.org/3/movie/616037?api_key=5a42ea8b4fbbe41ccef094fe698dbb64
 
 /* document.addEventListener("DOMContentLoaded", () => {
     let list = document.querySelector(".pokedex");

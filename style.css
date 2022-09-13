@@ -13,17 +13,38 @@ img{
 
 #movie__appcontainer {
     max-width: 375px;
+    overflow: hidden;
 }
 
 header {
     display: grid;
-   
+   height: 60px;
     grid-template-columns: repeat(3,1fr);
 }
 
 h1{
+    font-family: 'Merriweather', sans-serif;
     grid-area: 1/2/2/3;
+    align-self: center;
     justify-self: center;
+    color: #110E47;
+    font-size: 16px;
+    letter-spacing: 2%;
+}
+
+.now__showingcontainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.now__showingcontainer h2{
+    font-family: 'Merriweather', sans-serif;
+    color: #110E47;
+    font-size: 16px;
+    letter-spacing: 2%;
+    margin-left: 5px;
 }
 
 .now__showing{
@@ -67,8 +88,21 @@ h1{
     color:#FFC319;
 }
 
+.master__button{
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    border: 1px solid #AAA9B1;
+    font-size:10px;
+    height: 21px;
+    width: 61px;
+    border-radius: 10px;
+    color: #AAA9B1;
+    margin-right: 43px;
+}
+
 /* The switch - the box around the slider */
 .switch {
+    margin-right: 1em;
     justify-self: end;
     align-self: center;
     grid-area: 1/3/2/4;

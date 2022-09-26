@@ -8,18 +8,20 @@
     <script src="genres.js"></script>
     <script src="nowshowing.js" defer></script>
     <script src="popular.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" title="light" />
+    <link rel="alternate stylesheet" href="darkmode.css" title="darkmode" />
     <script
       src="https://kit.fontawesome.com/d3acdf8a76.js"
       crossorigin="anonymous"
     ></script>
+    <script src="darkmode.js" defer></script>
   </head>
   <body>
     <div id="movie__appcontainer">
       <header>
         <h1>MyMovies</h1>
-        <label class="switch">
-          <input type="checkbox" />
+        <label class="switch" for="checkbox">
+          <input id="checkbox" type="checkbox" class="checkbox" />
           <span class="slider round"></span>
         </label>
       </header>

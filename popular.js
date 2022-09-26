@@ -3,13 +3,13 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=5a42ea8b4fbbe41ccef094
 .then(response => response.json())
 .then(data => {
     data.results.forEach(result => {
-        let createDiv = document.createElement('div')
+        let createArticle = document.createElement('article')
 
         let ratingCoversion = result.vote_average;
         let rating = Math.round(ratingCoversion * 10) / 10;
 
-        createDiv.classList.add('popular__movie')
-        createDiv.innerHTML = `
+        createArticle.classList.add('popular__movie')
+        createArticle.innerHTML = `
         <a href="details.html?id=${result.id}">
         <img class="pop__poster" src="https://image.tmdb.org/t/p/w500/${result.poster_path}">
         </a>
@@ -22,10 +22,10 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=5a42ea8b4fbbe41ccef094
        
         </div>
         `;
-        popular.append(createDiv)
+        popular.append(createArticle)
 
        
-        const popGenres = createDiv.querySelector(".genre__container")
+        const popGenres = createArticle.querySelector(".genre__container")
         result.genre_ids.forEach(id => {
             
             let currentGenre = genres.find(genre => genre.id == id)

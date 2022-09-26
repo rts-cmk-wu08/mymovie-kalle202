@@ -58,6 +58,16 @@ h1{
     width: 143px;
 }
 
+.movie__card a{
+  text-decoration: none;
+  color: #000;
+}
+
+.popular__movie a{
+  text-decoration: none;
+  color: #000;
+}
+
 .poster__img {
     width: 143px;
     border-radius: 5px;
@@ -211,6 +221,7 @@ h1{
     background-color: #DBE3FF;
     color: #88A4E8;
     padding:0 1em;
+    text-align: center;
   }
 
   .info{

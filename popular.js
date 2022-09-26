@@ -14,7 +14,9 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=5a42ea8b4fbbe41ccef094
         <img class="pop__poster" src="https://image.tmdb.org/t/p/w500/${result.poster_path}">
         </a>
         <div class="pop__info">
+        <a href="details.html?id=${result.id}">
         <h3>${result.title}</h3>
+        </a>
         <div class="rating"><i class="fa-solid fa-star star"></i><p class="imdb__rating"><span>${rating}</span>/10 IMDb</p></div>
         <ul class="genre__container"></ul>
        

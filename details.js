@@ -3,7 +3,6 @@ let params = new URLSearchParams(window.location.search)
 let id = params.get("id")
 const movies = document.querySelector('#movies')
 
-console.log(id)
 
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=5a42ea8b4fbbe41ccef094fe698dbb64`)
     .then(response => response.json())

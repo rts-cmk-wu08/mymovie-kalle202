@@ -37,6 +37,7 @@ h1{
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    
 }
 
 .now__showingcontainer h2{
@@ -168,9 +169,8 @@ h1{
   }
 
   .info__container{
-    position: absolute;
-    z-index: 99;
-    margin-top: -30px;
+    
+    /* margin-top: -30px; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #fff;
@@ -182,7 +182,7 @@ h1{
   }
 
   .movie__backdrop{
-    position: relative;
+    
   }
 
   .movie__title {
@@ -192,8 +192,9 @@ h1{
 
   .genre__container{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
     column-gap: 8px;
+    row-gap: 8px;
 
 
   }
@@ -209,6 +210,7 @@ h1{
     list-style: none;
     background-color: #DBE3FF;
     color: #88A4E8;
+    padding:0 1em;
   }
 
   .info{
@@ -239,3 +241,101 @@ h1{
     font-size: 12px;
     color: #9C9C9C;
   }
+
+  .trailer__iframe{
+    width :100%; 
+    height :300px;
+    padding: 0;
+    margin: 0;
+    border-width: 0px;
+  }
+
+  .cast__title{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cast__title h3{
+    font-family: 'Merriweather';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.02em;
+
+color: #110E47;
+  }
+
+  .cast__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 13px;
+    max-width: 375px;
+    padding: 24px;
+   
+  }
+
+  .cast__container li{
+    list-style: none;
+  }
+
+  .cast__container li img{
+    border-radius: 10px;
+  }
+
+  h5{
+    font-family: 'Mulish', sans-serif;
+    font-size: 12px;
+    color: #110E47;
+
+  }
+
+  .popular__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 1em;
+  }
+
+  .popular__container h2{
+    font-family: 'Merriweather';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.02em;
+
+color: #110E47;
+
+  }
+
+  .popular{
+    display: grid;
+    row-gap: 16px;
+  }
+
+  .popular__movie{
+    margin: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 16px;
+    
+  }
+
+  .pop__poster{
+    width: 85px;
+    height: 120px;
+    border-radius: 8px;
+  }
+
+  .pop__info{
+    grid-area: 1/2/2/5;
+  }
+
+  .pop__info h3{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2%;
+    margin-bottom: 8px;
+  }
+  

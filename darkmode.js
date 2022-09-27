@@ -1,10 +1,38 @@
+const checkBox = document.querySelector('#checkbox')
+
 let setActiveStyleSheet = function (title) {
 let css = `link[rel="alternate stylesheet"]`;
-let stylesheets = document.querySelectorAll(css);
-console.log(stylesheets)
+let styleSheets = document.querySelectorAll(css);
+styleSheets.forEach(sheet => sheet.disabled = true);
+let selector = `link[title="${title}"]`;
+let activeSheet = document.querySelector(selector);
+activeSheet.disabled = false;
+localStorage.setItem("theme", title);
 }
 
-setActiveStyleSheet();
+let savedSheet = localStorage.getItem("theme");
+
+if(savedSheet){
+    setActiveStyleSheet(savedSheet);
+    if(savedSheet === "darkmode"){
+        checkBox.checked = true;
+    }
+    
+}else{
+    setActiveStyleSheet("lightmode")
+}
+
+
+checkBox.addEventListener('click', (event)=>{
+        
+        if(event.target.checked || savedSheet === "lightmode"){
+            setActiveStyleSheet("darkmode");
+        }else{
+            setActiveStyleSheet("lightmode");
+        }
+        
+ 
+})
 
 
 /* const checkBox = document.querySelector('#checkbox');

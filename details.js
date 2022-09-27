@@ -17,7 +17,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=5a42ea8b4fbbe41ccef094fe
         article.innerHTML = `
       
 
-        <div class="info__container">
+        <div class="info__container" id="info__container">
             <h2 class="movie__title">${data.title}<div class="rating"><i class="fa-solid fa-star star"></i><p class="imdb__rating"><span>${rating}</span>/10 IMDb</p></div></h2>
             
             <ul class="genre__container"></ul>

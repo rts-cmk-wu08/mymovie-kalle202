@@ -24,8 +24,8 @@ if(savedSheet){
 
 
 checkBox.addEventListener('click', (event)=>{
-        
-        if(event.target.checked || savedSheet === "lightmode"){
+        console.log(event.target.checked)
+        if(event.target.checked){
             setActiveStyleSheet("darkmode");
         }else{
             setActiveStyleSheet("lightmode");

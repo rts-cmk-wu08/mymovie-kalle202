@@ -1,0 +1,20 @@
+@import "style.css";
+
+body{
+    background-color: #000;
+}
+
+h1,h2,h5,h4,
+.movie__desc,
+.cast__title h3,
+.info p span,
+.pop__info h3,
+.now__showingcontainer h2,
+.popular__container h2,
+.movie__card a h3{
+    color: #fff;
+}
+
+#info__container{
+    background-color: rgb(38, 38, 38);
+}

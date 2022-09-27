@@ -1,0 +1,16 @@
+@import "style.css";
+
+body{
+    background-color: #fff;
+}
+
+h1,h2,h5,h4,
+.movie__desc,
+.cast__title h3,
+.info p span,
+.pop__info h3,
+.now__showingcontainer h2,
+.popular__container h2,
+.movie__card a h3{
+    color: #000;
+}

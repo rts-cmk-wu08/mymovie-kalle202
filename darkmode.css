@@ -18,3 +18,7 @@ h1,h2,h5,h4,
 #info__container{
     background-color: rgb(38, 38, 38);
 }
+
+header a{
+    color: #fff;
+}

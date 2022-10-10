@@ -1,3 +1,5 @@
+import {genres} from"./genres.js";
+
 let popular = document.querySelector(".popular");
 fetch("https://api.themoviedb.org/3/movie/popular?api_key=5a42ea8b4fbbe41ccef094fe698dbb64")
 .then(response => response.json())

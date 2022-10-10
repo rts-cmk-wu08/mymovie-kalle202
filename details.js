@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+
+
 
 let params = new URLSearchParams(window.location.search)
 let id = params.get("id")
@@ -89,4 +91,4 @@ fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=5a42ea8b4fbbe41c
     
 })
 
-})
+
